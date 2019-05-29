@@ -1,0 +1,46 @@
+<?XML version="2.0" standalone="yes" encoding="iso-8859-1" ?>
+<package>
+	<job id="testes">
+		<?job debug="true"?>
+		<runtime>
+			<description>Scripts testes</description>
+		</runtime>
+		<script language="JScript">
+		<![CDATA[
+		/*******************************************************************/
+		/*********************** Funções Gerais ****************************/
+		/*******************************************************************/
+
+		/*** Exec_RoboTester.bat
+
+		taskkill /F /IM mdm.exe
+
+		cd C:\Temp
+
+		rem Syswow64
+		rem system32
+
+		C:\Windows\system32\cscript.exe RoboArea\RoboModelo\TestesScripts.wsf
+
+		pause
+
+
+		*/
+
+		funcTester();
+		
+		
+		function funcTester(){
+			debugger;
+			
+			var txt  =  "Prezados" + "\r\n";
+			txt = txt + "Para consultar a reclamação na íntegra consultar o campo Descrição da Manifestação" + "\r\n";
+			
+		}		
+		
+			
+		WScript.Quit();
+		]]>
+		</script>
+	</job>
+</package>
